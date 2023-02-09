@@ -1,0 +1,23 @@
+.grid-item{
+
+    margin: 5%;
+    height: 300;
+}
+.title-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    align-items: center;
+    text-align: center;
+    color:#ffffff;
+    text-decoration:none;
+  
+  
+    
+   
+}
+.back-img{
+
+    /* background-image: url("../../../src/logos/hand-painted-watercolor-pastel-sky-background_23-2148902771.webp") */
+}

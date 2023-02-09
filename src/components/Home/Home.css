@@ -1,0 +1,50 @@
+.item {
+  font-family: 'Roboto', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display:grid ;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-rows : 1fr; */
+    /* background-image: radial-gradient(rgb(253, 43, 6),rgb(255, 220, 159)); */
+    margin-top: 100;
+    
+  }
+  .H{
+
+    -moz-osx-font-smoothing: grayscale;
+    font-family:cursive;
+    -webkit-font-smoothing: antialiased;
+
+
+  text-align: center;
+  /* margin-bottom: 100;
+  padding-bottom: 100; */
+
+  }
+  .home-div{
+    /* margin-left: 250px; */
+    /* text-align: center; */
+    background-image: url("../../../src/logos/hand-painted-watercolor-pastel-sky-background_23-2148902771.webp");
+    font-family: 'Roboto', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    
+    }
+    .search{
+
+      width: 30%;
+      margin-left: 35%;
+      margin-bottom: 2%;
+      margin-top: 2%;
+
+      border: solid 1px rgb(255, 255, 255);
+      box-shadow: 3px gray;
+
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}

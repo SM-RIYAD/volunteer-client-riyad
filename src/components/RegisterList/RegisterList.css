@@ -1,0 +1,18 @@
+.table-margin{
+
+ 
+    padding: 100;
+    border: black 10px;
+}
+.margin-div{
+
+    margin: 100px;
+}
+.img-table{
+
+   background-image: url("../../logos/trash-2\ 9.png");
+   border: 10px black;
+   width: 10%;
+   height: 10%;
+  
+}

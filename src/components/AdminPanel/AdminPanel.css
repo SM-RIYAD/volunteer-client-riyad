@@ -1,0 +1,14 @@
+.nav{
+ /* margin:300 ;
+ padding: 300; */
+ background-image: url("../../../src/logos/hand-painted-watercolor-pastel-sky-background_23-2148902771.webp");
+
+   
+}
+.div-col{
+
+    background-image: url("../../../src/logos/hand-painted-watercolor-pastel-sky-background_23-2148902771.webp");
+    /* width:700; */
+    align-items: center;
+    margin: 50;
+}

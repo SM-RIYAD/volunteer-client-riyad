@@ -1,0 +1,29 @@
+.img-style {
+    width:50%;
+  
+    background-image: url("../../../src/logos/hand-painted-watercolor-pastel-sky-background_23-2148902771.webp");
+                /* margin-bottom:200px */
+}
+.img-style img{
+    width:40%;
+    background-image: url("../../../src/logos/hand-painted-watercolor-pastel-sky-background_23-2148902771.webp");
+}
+/* .headers{
+
+
+
+    display:flexbox;
+    /* align-items:flex-start;
+} */
+.btcolor{
+
+  
+    margin:20px;
+    width: 100px;
+   align-items: center;
+   justify-content: center;
+}
+.extra-margin{
+
+    margin:15px
+}
