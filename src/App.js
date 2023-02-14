@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import React, { createContext, useState } from "react";
+import React, { createContext, useState,useEffect } from "react";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -21,6 +21,7 @@ export const UserContext = createContext();
 
 function App() {
   const [loggedInUser,setLoggedInUser]= useState({});
+
   return (
     <div>
    <UserContext.Provider value={[loggedInUser,setLoggedInUser]}> 

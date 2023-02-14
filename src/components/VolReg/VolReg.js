@@ -66,9 +66,10 @@ const VolReg = () => {
         })
           .then((res) => res.json())
           .then((data) => {
-              alert("volunteer added!");
-              console.log("data", data);
+             
+              console.log("data in vol reg", data);
               console.log("data added");
+              alert("volunteer added!");
             
           });
           navigate('/voldetails');

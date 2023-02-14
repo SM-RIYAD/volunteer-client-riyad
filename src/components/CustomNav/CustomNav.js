@@ -11,11 +11,13 @@ import "bootstrap/dist/css/bootstrap.css";
 import logo from "../../logos/Group 1329.png";
 import "../CustomNav/CustomNav.css";
 import { Link } from "react-router-dom";
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const CustomNav = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const [isloggedIn, setIsLoggedIn] = useState(false);
   const [isloggedOut, setIsLoggedOut] = useState(true);
+  const navigate = useNavigate();
   return (
     <div>
       <Navbar expand="lg">
@@ -44,7 +46,7 @@ const CustomNav = () => {
                   }} className="extra-margin" href="#action2">
               About Us
             </Nav.Link>
-            <NavDropdown className="extra-margin" title="Link" id="navbarScrollingDropdown">
+            {/* <NavDropdown className="extra-margin" title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
@@ -53,10 +55,10 @@ const CustomNav = () => {
               <NavDropdown.Item href="#action5">
                 Something else here
               </NavDropdown.Item>
-            </NavDropdown>
-            {loggedInUser && (
-              <Link  style={{ textDecoration: "none" }} to="/voldetails">
-                {" "}
+            </NavDropdown> */}
+            {loggedInUser.name && (
+              // <Link  style={{ textDecoration: "none" }} to="/voldetails">
+               
                 <Nav.Link 
                   style={{
                     color: "black",
@@ -67,16 +69,17 @@ const CustomNav = () => {
 
                   }}
                   href="#"
-                  disabled
+               
+                  onClick={()=>navigate("/voldetails")}
                  
                 >
-                  {loggedInUser.name}
+                  { loggedInUser.name}
                   {/* {loggedInUser.name&&(
                   setIsLoggedIn(true),
                   setIsLoggedOut(false)
                )} */}
                 </Nav.Link>
-              </Link>
+              // </Link>
             )}
 
             <Link style={{ textDecoration: "none" }} to="/login">
