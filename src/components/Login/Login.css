@@ -4,7 +4,7 @@
     align-items: center;
 
   font-family: Roboto;
-  height:500px
+  /* height:500px */
   
 
 
@@ -26,7 +26,9 @@
     background: #fff;
     margin-top: 10%;
    background-image: url("../../../src/logos/hand-painted-watercolor-pastel-sky-background_23-2148902771.webp");
+   
     }
+    
     .block-item {
         margin-top: 5%;
     width: 50%;
@@ -95,5 +97,6 @@
         }
     .log-main{
           background-image: url("../../../src/logos/hand-painted-watercolor-pastel-sky-background_23-2148902771.webp");
-           height:585px
+    
+     min-height: 700px;
         }

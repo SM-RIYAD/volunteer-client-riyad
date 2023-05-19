@@ -16,6 +16,7 @@ import VolReg from './components/VolReg/VolReg';
 import RegisterList from './components/RegisterList/RegisterList';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
+
 export const UserContext = createContext();
 
 
@@ -23,7 +24,7 @@ function App() {
   const [loggedInUser,setLoggedInUser]= useState({});
 
   return (
-    <div>
+    <div className='main-div' >
    <UserContext.Provider value={[loggedInUser,setLoggedInUser]}> 
          
          <Router>

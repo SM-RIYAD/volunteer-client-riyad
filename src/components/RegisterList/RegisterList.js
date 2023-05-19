@@ -19,11 +19,9 @@ const RegisterList = () => {
         if (result) {
           console.log(visibility);
 
-          
-            fetch("http://localhost:5000/regvols")
-              .then((response) => response.json())
-              .then((json) => setRegVols(json));
-        
+          fetch("http://localhost:5000/regvols")
+            .then((response) => response.json())
+            .then((json) => setRegVols(json));
         }
         console.log("deleted succesfully!");
       });
@@ -38,7 +36,6 @@ const RegisterList = () => {
   console.log("Regvols: ", regVols);
   return (
     <div className="margin-div">
-      
       <div className="App">
         <Table bordered striped size="sm">
           <thead>
@@ -52,22 +49,24 @@ const RegisterList = () => {
           </thead>
           <tbody>
             {regVols.map((item) => (
-              
-               
-                <tr class="table-margin">
-                  <td class="table-margin">{item.name}</td>
-                  <td>{item.email}</td>
-                  <td>{item.date}</td>
-                  <td>{item.event_name}</td>
-                  <td
-                    onClick={() => {
-                      handleVolDelete(item._id);
-                      console.log(item._id);
-                    }}
-                    className="img-table"
-                  ></td>
-                </tr>
-            
+              <tr class="table-margin">
+                <td class="table-margin">{item.name}</td>
+                <td>{item.email}</td>
+                <td>{item.date}</td>
+                <td>{item.event_name}</td>
+                <td
+                
+                  className=""
+                >
+
+                   {/* <img src="../../logos/trash-2\ 9.png" alt="" /> */}
+                   <button class="btn-del" onClick={() => {
+                    handleVolDelete(item._id);
+                    console.log(item._id);
+                  }}> <i class="fa fa-trash"></i></button>
+
+                </td>
+              </tr>
             ))}
           </tbody>
         </Table>

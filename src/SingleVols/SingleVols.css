@@ -20,9 +20,11 @@ body {
 }
 .single-card{
 
-  /* box-shadow: 10px 10px 10px  10px #d2d2df; */
+
     border-radius: 10px;
-    background-color: #FFFFFF;
+ 
+    background-color: #ffffff  ;
+
     margin: 10px;
 }
 .cancel{
@@ -35,5 +37,6 @@ body {
   border: hidden;
   border-radius: 10px;
   margin: 10px;
+
 
 }

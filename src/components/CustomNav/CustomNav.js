@@ -25,7 +25,9 @@ const CustomNav = () => {
           <Navbar.Brand href="#">
             {" "}
             <Link style={{ textDecoration: "none" }} to="/home">
-            <img class="img-style" src={logo} alt="green iguana" /> </Link>
+            <img        style={{ 
+          backgroundSize: "cover",
+          background:  "no-repeat"}} class="img-style " src={logo}  /> </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           {/* <Navbar.Collapse id="navbarScroll"> */}

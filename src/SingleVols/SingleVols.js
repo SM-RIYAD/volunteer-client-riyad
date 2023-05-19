@@ -24,7 +24,7 @@ const SingleVols = (props) => {
   return (
     <>
     { visibility && (
-       <div class=" single-card">
+       <div  class=" single-card">
       
        <div class="row d-flex  justify-content-between ">
          <div class="col-6 d-flex ">
